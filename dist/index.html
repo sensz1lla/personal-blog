@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Статьи</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <form class="search" action="/" method="POST">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <img src="assets/images/sidebar-header-bg.jpg" alt="">
+            </div>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar" src="https://placehold.it/100" alt="Аватар">
+                    <div class="profile__name">Антон Назаренко</div>
+                    <div class="profile__prof">блог front-end разработчика</div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/images/icons/instagram.svg" alt="Антон Назаренко instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/images/icons/vk.svg" alt="Антон Назаренко Vk">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/images/icons/pinterest.svg" alt="Антон Назаренко Pinterest">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile__text">Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</div>
+                </div>
+            </div>
+            <div class="sidebar__footer">
+                <a class="btn btn--red" href="#">Мои работы</a>
+                <button class="btn btn--blue" type="button">Написать мне</button>
+            </div>
+        </aside>
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+                
+                <!-- Stories -->
+                <div class="stories">
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/stories-1.jpg" alt="">
+                        <div class="stories__title">Отдыхаю на природе</div>
+                        <time class="stories__date" datetime="2021-02-21 19:21">21.02.2021</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/stories-2.jpg" alt="">
+                        <div class="stories__title">Заканчиваю сложный проект</div>
+                        <time class="stories__date" datetime="2021-02-21 12:20">21.02.2021</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/stories-3.jpg" alt="">
+                        <div class="stories__title">Переехал в новую квартиру</div>
+                        <time class="stories__date" datetime="2021-02-21 18:24">20.02.2021</time>
+                    </div>
+                    <div class="stories__item">
+                        <img class="stories__preview" src="assets/images/stories/stories-4.jpg" alt="">
+                        <div class="stories__title">Осень пришла!</div>
+                        <time class="stories__date" datetime="2021-02-21 22:21">19.02.2021</time>
+                    </div>
+                </div>
+                
+                <!-- Add post -->
+                <div class="add-post">
+                    <form class="add-post__form" action="/" method="POST">
+                        <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+                        <div class="add-post__form-actions">
+                            <label class="add-post__file" for="add-post-file">
+                                <input type="file" name="file" id="add-post-file">
+                            </label>
+                            <button class="add-post__send" type="submit">
+                                <img src="assets/images/icons/send.svg" alt="Отправить">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Post -->
+                <div class="post">
+                    <div class="post__content">
+                        <p class="post__desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto cum quam earum itaque illum voluptates, harum esse quos impedit libero soluta iure eaque sit consectetur quod molestiae eligendi consequuntur officiis!
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2021-02-10 17:40">10.02.2021</time>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <article class="post">
+                    <div class="post__header post__header--preview">
+                        <a href="#">
+                            <img class="post__preview" src="assets/images/post-2.jpg" alt="Как писать код быстро и безболезненно?">
+                        </a>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Как писать код быстро и безболезненно?</a>
+                        </h2>
+                        <p class="post__desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto cum quam earum itaque illum voluptates, harum esse quos impedit libero soluta iure eaque sit consectetur quod molestiae eligendi consequuntur officiis!
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2021-02-10 17:40">10.02.2021</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">создание сайтов</a>
+                            </li>
+                        </ul>
+                        <a class="post__read" href="#">читать</a>
+                    </div>
+                </article>
+                
+                <article class="post">
+                    <div class="post__header">
+                        <div class="embed">
+                            <iframe src="https://www.youtube.com/embed/aRPvDH7Wv64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+                        </h2>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2021-02-10 17:40">10.02.2021</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">продвижение видео</a>
+                            </li>
+                        </ul>
+                        <a class="post__read" href="#">оставить комментарий</a>
+                    </div>
+                </article>
+                
+                <article class="post">
+                    <div class="post__header post__header--preview">
+                        <a href="#">
+                            <img class="post__preview" src="assets/images/post-3.jpg" alt="Как я сходил на FrontEnd Conf 2021">
+                        </a>
+                    </div>
+                    <div class="post__content">
+                        <h2 class="post__title">
+                            <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+                        </h2>
+                        <p class="post__desc">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto cum quam earum itaque illum voluptates, harum esse quos impedit libero soluta iure eaque sit consectetur quod molestiae eligendi consequuntur officiis!
+                        </p>
+                    </div>
+                    <div class="post__footer">
+                        <ul class="post__data">
+                            <li class="post__data-item">
+                                <time datetime="2021-02-10 17:40">10.02.2021</time>
+                            </li>
+                            <li class="post__data-item">
+                                <a href="#">конференции</a>
+                            </li>
+                        </ul>
+                        <a class="post__read" href="#">читать</a>
+                    </div>
+                </article>
+                
+                <!-- Pagination -->
+                <ul class="pagination">
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">&lt;</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link active" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a class="pagination__link" href="#">&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
