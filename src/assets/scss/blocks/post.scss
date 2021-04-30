@@ -90,11 +90,6 @@
 
     a {
         color: $blue;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
     table {
@@ -127,11 +122,6 @@
 
     a {
         color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 }
 
@@ -152,11 +142,6 @@
 .post__read {
     color: #107EFF;
     font-size: 1.4rem;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 .post__actions {
@@ -168,12 +153,10 @@
 
     a {
         color: inherit;
-        text-decoration: none;
         opacity: 0.6;
         transition: opacity .2s linear;
 
         &:hover {
-            text-decoration: underline;
             opacity: 1;
         }
     }

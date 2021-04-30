@@ -20,6 +20,14 @@ body {
     letter-spacing: 0.5px;
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 /* Blocks */
 @import "blocks/page";
 @import "blocks/header";

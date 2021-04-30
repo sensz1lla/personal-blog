@@ -20,6 +20,7 @@
 
         &:hover {
             background-color: darken($red, 5%);
+            text-decoration: none;
         }
     }
 
@@ -29,6 +30,7 @@
 
         &:hover {
             background-color: darken($blue, 5%);
+            text-decoration: none;
         }
     }
 }
