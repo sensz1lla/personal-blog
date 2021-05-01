@@ -33,4 +33,12 @@
             text-decoration: none;
         }
     }
+
+    &--rounded {
+        border-radius: 0.41em;
+    }
+
+    &--sm {
+        padding: 0.7em 1.25em;
+    }
 }

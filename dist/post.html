@@ -70,7 +70,7 @@
             </div>
             <div class="sidebar__content">
                 <div class="profile">
-                    <img class="profile__avatar" src="https://placehold.it/100" alt="Аватар">
+                    <img class="profile__avatar" src="assets/images/avatar.jpg" alt="Аватар">
                     <div class="profile__name">Антон Назаренко</div>
                     <div class="profile__prof">блог front-end разработчика</div>
                     <ul class="social">
@@ -165,7 +165,7 @@
                         </div>
                 
                         <div class="related">
-                            <h3 class="related__title">Интересно почитать</h3>
+                            <h3 class="post__subtitle">Интересно почитать</h3>
                             <ul class="related__list">
                                 <li class="related__list-item">
                                     <h4 class="related__list-title">
@@ -193,6 +193,55 @@
                                 </li>
                             </ul>
                         </div>
+                
+                        <h3 class="post__subtitle">Обсуждение</h3>
+                
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <textarea class="form__control form__control--textarea" name="comments-text" placeholder="Текст комментария"></textarea>
+                                <span class="form__line"></span>
+                            </div>
+                            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                        </form>
+                
+                        <ul class="comments">
+                            <li class="comments__item">
+                                <div class="comments__head">
+                                    <img class="comments__avatar" src="assets/images/kriss-avatar.jpg" alt="Кристина Рыбальченко">
+                                    <div class="comments__author">
+                                        <div class="comments__name">Кристина Рыбальченко</div>
+                                        <time class="comments__pubdate" datetime="2021-06-22 19:24">1 неделю назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quod et culpa, enim voluptatum minima impedit nulla accusamus fuga ipsam atque, recusandae aliquid?</div>
+                                <button class="comments__reply" type="button">ответить</button>
+                
+                                <ul class="comments">
+                                    <li class="comments__item">
+                                        <div class="comments__head">
+                                            <img class="comments__avatar" src="assets/images/natali-avatar.jpg" alt="Natalia">
+                                            <div class="comments__author">
+                                                <div class="comments__name">Natalia</div>
+                                                <time class="comments__pubdate" datetime="2021-06-22 19:24">1 неделю назад</time>
+                                            </div>
+                                        </div>
+                                        <div class="comments__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit excepturi iure nobis minima quasi, eos temporibus earum delectus amet sunt odit ullam explicabo dolorem beatae quaerat nam incidunt.</div>
+                                        <button class="comments__reply" type="button">ответить</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="comments__item">
+                                <div class="comments__head">
+                                    <img class="comments__avatar" src="assets/images/kriss-avatar.jpg" alt="Кристина Рыбальченко">
+                                    <div class="comments__author">
+                                        <div class="comments__name">Кристина Рыбальченко</div>
+                                        <time class="comments__pubdate" datetime="2021-06-22 19:24">1 неделю назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, blanditiis!</div>
+                                <button class="comments__reply" type="button">ответить</button>
+                            </li>
+                        </ul>
                     </div>
                 </article>
             </div>
