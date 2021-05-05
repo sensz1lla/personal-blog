@@ -342,6 +342,11 @@ a {
 .page {
   overflow: hidden; }
 
+.page__title {
+  color: #fff;
+  font-size: 2.1rem;
+  margin-bottom: 3rem; }
+
 .header {
   display: flex;
   position: fixed;
@@ -934,3 +939,60 @@ a {
   bottom: 0;
   z-index: 1;
   transition: wight .2s linear; }
+
+.work {
+  display: flex;
+  margin-bottom: 3rem;
+  background-color: #202020;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden; }
+
+.work__preview {
+  max-width: 31rem; }
+  .work__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+
+.work__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 29rem;
+  padding: 2.5rem; }
+
+.work__title {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3rem; }
+  .work__title a {
+    color: inherit; }
+
+.work__description {
+  color: #D2D2D2;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.68;
+  margin-bottom: 3rem; }
+
+.work__button {
+  margin-top: auto;
+  text-align: right; }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem; }
+
+.tags__item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #EA8C1E;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.3; }
