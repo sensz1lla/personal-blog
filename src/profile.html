@@ -1,0 +1,42 @@
+---
+layout: default
+title: Profile Settings
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="form" method="POST">
+    <div class="study">
+        <div class="study__form">
+            <div class="form__group form__group--md">
+                <input class="form__control" type="text" placeholder="Ваше имя" value="Валерия Невлова">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input class="form__control" type="email" placeholder="Ваше Email" value="lera1nevlowa@email.com">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input class="form__control" type="password" placeholder="Новый пароль">
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group form__group--md">
+                <input class="form__control" type="password" placeholder="Подтвердите пароль">
+                <span class="form__line"></span>
+            </div>
+        </div>
+        <div class="study__avatar">
+            <img src="assets/images/lera-avatar.jpg" alt="Загрузить аватар">
+            
+            <label class="study__file">
+                <input type="file">
+                выбрать  аватар
+            </label>
+        </div>
+    </div>
+
+    <button class="btn btn--blue btn--rounded btn--sm" type="button">Сохранить</button>
+</form>
