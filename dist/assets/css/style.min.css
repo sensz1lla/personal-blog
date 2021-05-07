@@ -346,6 +346,8 @@ a {
   color: #fff;
   font-size: 2.1rem;
   margin-bottom: 3rem; }
+  .page__title--center {
+    text-align: center; }
 
 .header {
   display: flex;
@@ -905,6 +907,10 @@ a {
   .comments__reply:hover {
     text-decoration: underline; }
 
+.form--auth {
+  max-width: 28rem;
+  margin: 0 auto; }
+
 .form__group {
   position: relative;
   margin-bottom: 1.5rem; }
@@ -941,6 +947,19 @@ a {
   bottom: 0;
   z-index: 1;
   transition: wight .2s linear; }
+
+.form__footer--center {
+  text-align: center; }
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.2; }
+  .form__footer-list li {
+    margin: 0 .5rem; }
+  .form__footer-list a {
+    color: #fff; }
 
 .work {
   display: flex;

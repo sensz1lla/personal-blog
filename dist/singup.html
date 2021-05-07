@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Profile Settings</title>
+    <title>Sing Up</title>
 </head>
 <body>
 
@@ -105,43 +105,41 @@
         <main class="main">
             <div class="container">
                 
-                <h1 class="page__title">Профиль</h1>
+                <h1 class="page__title page__title--center">Регистрация</h1>
                 
-                <form action="/" class="form" method="POST">
-                    <div class="study">
-                        <div class="study__form">
-                            <div class="form__group form__group--md">
-                                <input class="form__control" type="text" placeholder="Ваше имя" value="Валерия Невлова">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input class="form__control" type="email" placeholder="Ваш Email" value="lera1nevlowa@email.com">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input class="form__control" type="password" placeholder="Новый пароль">
-                                <span class="form__line"></span>
-                            </div>
-                
-                            <div class="form__group form__group--md">
-                                <input class="form__control" type="password" placeholder="Подтвердите пароль">
-                                <span class="form__line"></span>
-                            </div>
-                        </div>
-                        <div class="study__avatar">
-                            <img src="assets/images/lera-avatar.jpg" alt="Загрузить аватар">
-                            
-                            <label class="study__file">
-                                <input type="file">
-                                выбрать  аватар
-                            </label>
-                        </div>
+                <form action="/" class="form form--auth" method="POST">
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="text" placeholder="Ваше имя">
+                        <span class="form__line"></span>
                     </div>
-                    
-                    <div class="form__footer">
-                        <button class="btn btn--blue btn--rounded btn--sm" type="button">Сохранить</button>
+                
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="email" placeholder="Ваш Email">
+                        <span class="form__line"></span>
+                    </div>
+                
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="password" placeholder="Пароль">
+                        <span class="form__line"></span>
+                    </div>
+                
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="password" placeholder="Подтвердите пароль">
+                        <span class="form__line"></span>
+                    </div>
+                
+                    <div class="form__footer form__footer--center">
+                        <div class="form__group form__group--md">
+                            <button class="btn btn--blue btn--rounded btn--sm" type="button">Регистрация</button>
+                        </div>
+                        <ul class="form__footer-list">
+                            <li>
+                                <a href="#">войти</a>
+                            </li>
+                            <li>
+                                <a href="#">восстановить</a>
+                            </li>
+                        </ul>
                     </div>
                 </form>
             </div>
