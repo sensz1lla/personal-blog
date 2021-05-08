@@ -18,6 +18,10 @@ body {
     color: $white;
     line-height: 1.5;
     letter-spacing: 0.5px;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -51,3 +55,4 @@ a {
 @import "blocks/work";
 @import "blocks/tags";
 @import "blocks/study";
+@import "blocks/modal";

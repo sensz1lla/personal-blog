@@ -375,6 +375,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -392,7 +396,10 @@ a:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-width: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -1463,4 +1470,14 @@ a:hover {
 
 .study__file:hover {
     text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1010;
 }
