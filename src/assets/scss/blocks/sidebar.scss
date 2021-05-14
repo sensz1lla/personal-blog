@@ -7,6 +7,10 @@
     height: 100vh;
     background-color: $primary;
     box-shadow: 5px 0 15px rgba(#050505, .1);
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }
 
 .sidebar__header {
