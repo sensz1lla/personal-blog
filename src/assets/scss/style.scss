@@ -20,7 +20,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.5px;
 
-    &.no-scroll {
+    &.no-scroll,
+    &.show-sidebar {
         overflow: hidden;
     }
 }
@@ -36,6 +37,7 @@ a {
 /* Blocks */
 @import "blocks/page";
 @import "blocks/header";
+@import "blocks/burger";
 @import "blocks/nav";
 @import "blocks/subnav";
 @import "blocks/search";
