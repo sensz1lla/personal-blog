@@ -375,7 +375,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-body.no-scroll {
+body.no-scroll, body.show-sidebar {
     overflow: hidden;
 }
 
@@ -401,6 +401,24 @@ a:hover {
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    .show-sidebar .page {
+        position: relative;
+    }
+
+    .show-sidebar .page::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
 }
 
 .page__title {
@@ -463,6 +481,7 @@ a:hover {
     width: 3rem;
     height: 2rem;
     padding: 0;
+    display: none;
     background: none;
     border: none;
     font-size: 0;
@@ -533,8 +552,23 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
+    .burger {
+        display: block;
+    }
+}
+
+.nav--mobile {
+    display: none;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 991px) {
     .nav {
         display: none;
+    }
+
+    .nav--mobile {
+        display: block;
     }
 }
 
@@ -542,6 +576,15 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+@media screen and (max-width: 991px) {
+    .nav__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .nav__item {
@@ -555,6 +598,12 @@ a:hover {
 
 .nav__item:hover > .subnav {
     display: block;
+}
+
+@media screen and (max-width: 991px) {
+    .nav__item:hover .nav__link {
+        background: none;
+    }
 }
 
 .nav__link {
@@ -589,6 +638,14 @@ a:hover {
     transform: translateY(-50%);
 }
 
+@media screen and (max-width: 991px) {
+    .nav__link {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.6rem;
+    }
+}
+
 .subnav {
     display: none;
     position: absolute;
@@ -600,6 +657,17 @@ a:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 5px 5px;
     padding: .5rem 0;
+}
+
+@media screen and (max-width: 991px) {
+    .subnav {
+        position: static;
+        width: 100%;
+        padding-left: 2rem;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 .subnav__link {
@@ -616,6 +684,18 @@ a:hover {
 .subnav__link:hover {
     background-color: #2c31b4;
     text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .subnav__link {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.5rem;
+    }
+
+    .subnav__link:hover {
+        background: none;
+    }
 }
 
 .search {
@@ -668,6 +748,17 @@ a:hover {
 
 @media screen and (max-width: 991px) {
     .sidebar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: calc(100vh - 4rem);
+        padding-bottom: 1.5rem;
+        overflow: auto;
+        top: 4rem;
         -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         transform: translateX(-100%);
@@ -706,6 +797,14 @@ a:hover {
 
 .sidebar__content {
     padding: 0 2rem;
+}
+
+@media screen and (max-width: 991px) {
+    .sidebar__content {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
 }
 
 .sidebar__footer {
@@ -748,6 +847,7 @@ a:hover {
     .profile {
         margin-top: -1rem;
         position: relative;
+        border-bottom: 1px solid #1C1C1C;
     }
 }
 

@@ -5,6 +5,10 @@
     margin-bottom: 3rem;
     padding: 2.5rem;
     overflow: hidden;
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
 }
 
 .post__header {
@@ -30,6 +34,7 @@
     color: #fff;
     font-size: 1.8rem;
     font-weight: 500;
+    line-height: 1.4;
     margin-bottom: 1.5rem;
 
     a {
@@ -122,6 +127,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .post__data {
@@ -131,6 +141,12 @@
 
     a {
         color: inherit;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 1rem;
+
+        font-size: 1.2rem;
     }
 }
 
