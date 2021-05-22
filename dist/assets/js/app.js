@@ -81,10 +81,21 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/assets/js/modal.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./src/assets/js/mobileNav.js":
+/*!************************************!*\
+  !*** ./src/assets/js/mobileNav.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = document.getElementById('sidebar');\nconst page = document.getElementById('page');\nconst body = document.body;\n\nburger.addEventListener('click', event => {\n    if( body.classList.contains('show-sidebar') ) {\n        closeSidebar();\n    } else {\n        showSidebar();\n    }\n});\n\nfunction showSidebar() {\n    let mask = document.createElement('div');\n    mask.classList.add('page__mask');\n    mask.addEventListener('click', closeSidebar);\n    page.appendChild(mask);\n\n    body.classList.add('show-sidebar');\n}\n\nfunction closeSidebar() {\n    body.classList.remove('show-sidebar');\n    document.querySelector('.page__mask').remove();\n}\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
+
+/***/ }),
 
 /***/ "./src/assets/js/modal.js":
 /*!********************************!*\
@@ -94,6 +105,28 @@
 /***/ (function(module, exports) {
 
 eval("const modalBtn = document.querySelectorAll('[data-modal]');\nconst body = document.body;\nconst modalClose = document.querySelectorAll('.modal__close');\nconst modal = document.querySelectorAll('.modal');\n\nmodalBtn.forEach(item => {\n\n    item.addEventListener('click', event => {\n        let $this = event.currentTarget;\n        let modalId = $this.getAttribute('data-modal');\n        let modal = document.getElementById(modalId);\n        let modalContent = modal.querySelector('.modal__content');\n\n        modalContent.addEventListener('click', event => {\n            event.stopPropagation();\n        })\n\n        modal.classList.add('show');\n        body.classList.add('no-scroll');\n        \n        setTimeout(() => {\n\n            modalContent.style.transform = 'none';\n            modalContent.style.opacity = '1';\n\n        }, 1);\n    });\n\n});\n\nmodalClose.forEach(item => {\n\n    item.addEventListener('click', event => {\n\n        let currentModal = event.currentTarget.closest('.modal');\n\n        closeModal(currentModal);\n\n    });\n\n});\n\nmodal.forEach(item => {\n\n    item.addEventListener('click', event => {\n\n        let currentModal = event.target;\n\n        closeModal(currentModal);\n\n    });\n\n});\n\nfunction closeModal(currentModal) {\n    let modalContent = currentModal.querySelector('.modal__content');\n    modalContent.removeAttribute('style');\n    \n    setTimeout(() => {\n        currentModal.classList.remove('show');\n        body.classList.remove('no-scroll');\n    }, 200);\n\n}\n\n\n//# sourceURL=webpack:///./src/assets/js/modal.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/textarea.js":
+/*!***********************************!*\
+  !*** ./src/assets/js/textarea.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const textArea = document.querySelectorAll('[data-autoresize]');\n\ntextArea.forEach(item => {\n    let textAreaH = item.offsetHeight;\n\n    item.addEventListener('input', event => {\n        let $this = event.target;\n\n        $this.style.height = textAreaH + 'px';\n        $this.style.height = $this.scrollHeight + 'px';\n    });\n});\n\n//# sourceURL=webpack:///./src/assets/js/textarea.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!***********************************************************************************************!*\
+  !*** multi ./src/assets/js/mobileNav.js ./src/assets/js/modal.js ./src/assets/js/textarea.js ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! /Users/mac/Documents/Document/WEB/personal-blog/src/assets/js/mobileNav.js */\"./src/assets/js/mobileNav.js\");\n__webpack_require__(/*! /Users/mac/Documents/Document/WEB/personal-blog/src/assets/js/modal.js */\"./src/assets/js/modal.js\");\nmodule.exports = __webpack_require__(/*! /Users/mac/Documents/Document/WEB/personal-blog/src/assets/js/textarea.js */\"./src/assets/js/textarea.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/mobileNav.js_./src/assets/js/modal.js_./src/assets/js/textarea.js?");
 
 /***/ })
 

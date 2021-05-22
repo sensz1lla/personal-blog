@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div class="page">
+    <div id="page" class="page">
         <!-- Header -->
         <header class="header">
             <div class="header__left">
@@ -48,7 +48,7 @@
                     </ul>
                 </nav>
         
-                <button class="burger active" type="button">
+                <button id="sidebarToggle" class="burger active" type="button">
                     <span>Открыть навигацию</span>
                 </button>
             </div>
@@ -71,7 +71,7 @@
         </header>
 
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside id="sidebar" class="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header-bg.jpg" alt="">
             </div>
@@ -242,7 +242,7 @@
                 
                         <form class="form" action="/" method="post">
                             <div class="form__group">
-                                <textarea class="form__control form__control--textarea" name="comments-text" placeholder="Текст комментария"></textarea>
+                                <textarea class="form__control form__control--textarea" name="comments-text" placeholder="Текст комментария" data-autoresize></textarea>
                                 <span class="form__line"></span>
                             </div>
                             <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
